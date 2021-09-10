@@ -12,9 +12,13 @@ but we also can create it.
 
 To create, we can use the code below
 ```js
-function func(){
+function myPromise(){
   return new Promise();
 }
+
+/// or ///
+
+const myPromise = new Promise();
 ```
 
 Now, the _Promise_ need two types of return.
@@ -25,11 +29,14 @@ Note: There's one more state called _pending_ which is an initial state.
 
 Therefore you need to include those two parameters in your _Promise_ function
 ```js
+// You can name whatever you want inside the parameters
 new Promise((fulfill, reject) => {
   // code
 })
 ```
 
-And that's how you create a new function that return the _Promise_
+And that's how you create a new function that return the _Promise_.
 
 ### Uses of `then()` and `catch()`
+
+`then()` is 
