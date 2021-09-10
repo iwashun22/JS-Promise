@@ -9,3 +9,10 @@ fetch()
 ```
 
 but we also can create it.
+
+To create, we can use the code below
+```js
+function func(){
+  return new Promise();
+}
+```
