@@ -44,6 +44,7 @@ And that's how you create a new function that return the _Promise_.
 But this function will only run when the promise had a return. It's hard to explain, so maybe it will be better to look at the code below.
 
 ```js
+///// Bad Example /////
 function badFunction(){
    return new Promise((fulfill, reject) => {
       console.log('Hello');
