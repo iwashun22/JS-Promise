@@ -2,7 +2,7 @@
 
 ### this is a note of the Promise in JavaScript
 
-Most of Node.js functions return the _Promise_ , because we usually use the asynchronous functions.
+A lot of Node.js functions return the _Promise_ , because we usually use the asynchronous functions.
 There's a function that returns a _Promise_ itself such as
 ```js
 fetch()
