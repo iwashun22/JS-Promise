@@ -21,13 +21,13 @@ function myPromise(){
 const myPromise = new Promise();
 ```
 
-Now, the _Promise_ need two types of return.
+### Now, the _Promise_ need two types of return.
 - fulfill : meaning that the operation succeed
 - reject : meaning that the operation failed or had an error
 
 Note: There's one more state called _pending_ which is an initial state.
 
-Therefore you need to include those two parameters in your _Promise_ function
+#### Therefore you need to include those two parameters in your _Promise_ function
 ```js
 // You can name whatever you want inside the parameters
 new Promise((fulfill, reject) => {
@@ -75,7 +75,7 @@ myPromise()
 ```
 This code seems to be good, but there's better way to do it. Because this code will never execute catch() function.
 
-Here is better way to code.
+### Here is better way to code.
 ```js
 function sayHi(name){
    return new Promise((resolve, reject) => {
@@ -90,7 +90,7 @@ sayHi('Michael')
    .catch(err => console.log(err));
 ```
 
-Now you can wrap them in one function to make it shorter
+### Now you can wrap them in one function to make it shorter
 ```js
 function sayHi(name, delay){
    return new Promise((fulfill, reject) => {
