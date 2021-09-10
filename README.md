@@ -39,4 +39,5 @@ And that's how you create a new function that return the _Promise_.
 
 ### Uses of `then()` and `catch()`
 
-`then()` is 
+`then()` will get executed when the promise fulfilled, in the opposite `catch()` will get execute when the promise rejected.
+
