@@ -17,7 +17,7 @@ function func(){
 }
 ```
 
-Now, the _Promise_ needs two types of return.
+Now, the _Promise_ need two types of return.
 - fulfill
 - reject
 
