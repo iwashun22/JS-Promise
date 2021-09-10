@@ -18,8 +18,10 @@ function func(){
 ```
 
 Now, the _Promise_ need two types of return.
-- fulfill
-- reject
+- fulfill : meaning that the operation success
+- reject : meaning that the operation failed or had an error
+
+Note: There's one more state called _pending_ which is an initial state.
 
 Therefore you need to include those two parameters in your _Promise_ function
 ```js
