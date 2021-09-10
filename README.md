@@ -89,3 +89,27 @@ sayHi('Michael')
    .then(msg => console.log(msg))
    .catch(err => console.log(err));
 ```
+
+Now you can wrap them is one function to make it shorter
+```js
+function sayHi(name, delay){
+   return new Promise((fulfill, reject) => {
+      if(typeof(name) === 'string' && !isNaN(delay)) setTimeout(() => { fulfill(name) }, delay);
+      else if(isNaN(delay)) reject(new Error('Delay requires a valid number'));
+      else reject(new Error('Name needs to be a type of string'));
+   })
+}
+
+function runAsync(person, delay){
+   console.log(person);
+   sayHi(person, delay)
+      .then(name => {return `Hello ${name}, Nice to meet you!`})
+      .then(msg => console.log(msg))
+      .catch(err => console.log(err));
+}
+
+runAsync('David', 2000); // console seccessfully
+runAsync(['Hello', 'world'], 3000); // console the error
+runAsync(28, 80) // console the error
+runAsync('John', 'Cena') // console the error
+```
