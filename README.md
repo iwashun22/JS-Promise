@@ -90,7 +90,7 @@ sayHi('Michael')
    .catch(err => console.log(err));
 ```
 
-### Now you can wrap them in one function to make it shorter
+### Now you can wrap them in one function to make it shorter. Also can add delay too see if it runs as asynchronous function
 ```js
 function sayHi(name, delay){
    return new Promise((fulfill, reject) => {
