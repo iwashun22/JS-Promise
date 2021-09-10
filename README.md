@@ -55,5 +55,18 @@ badFunction()
   .catch(err => console.log(err));
 ```
 
-The code `then()` and `catch` won't be executed because there's nothing to return in its parameter.
+The code `then()` and `catch` won't get executed because there's nothing to return in its parameter.
 So you will only see the 'Hello' on the console.
+
+Instead of using that it's better to callback
+```js
+function myPromise(){
+  return new Promise((resolve, reject) => {
+    resolve('Hello');
+  })
+}
+
+myPromise()
+  .then(msg => console.log(msg))
+  .catch(err => console.log(err));
+```
