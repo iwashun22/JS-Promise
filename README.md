@@ -18,7 +18,7 @@ function func(){
 ```
 
 Now, the _Promise_ need two types of return.
-- fulfill : meaning that the operation success
+- fulfill : meaning that the operation succeed
 - reject : meaning that the operation failed or had an error
 
 Note: There's one more state called _pending_ which is an initial state.
