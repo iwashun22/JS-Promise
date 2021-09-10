@@ -114,4 +114,4 @@ runAsync(28, 80) // console the error
 runAsync('John', 'Cena') // console the error
 ```
 
-#### You can try it yourself, and hopefully this make you understand little more.
+#### You can try it yourself, and hopefully it makes you understand little more.
