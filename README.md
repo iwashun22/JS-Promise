@@ -70,4 +70,22 @@ function myPromise(){
 myPromise()
   .then(msg => console.log(msg))
   .catch(err => console.log(err));
+ 
+// now, then() will get execute
+```
+This code seems to be good, but there's better way to do it. Because this code will never execute catch() function.
+
+Here is better way to code.
+```js
+function sayHi(name){
+   return new Promise((fulfill, reject) => {
+      if(typeof(name) === 'string') fulfill(name);
+      else reject(new Error('Name needs to be a type of string'));
+   })
+}
+
+say('Michael')
+   .then(name => {return `Hello ${name}, Nice to meet you!`})
+   .then(msg => console.log(msg))
+   .catch(err => console.log(err));
 ```
