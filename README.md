@@ -78,8 +78,8 @@ This code seems to be good, but there's better way to do it. Because this code w
 Here is better way to code.
 ```js
 function sayHi(name){
-   return new Promise((fulfill, reject) => {
-      if(typeof(name) === 'string') fulfill(name);
+   return new Promise((resolve, reject) => {
+      if(typeof(name) === 'string') resolve(name);
       else reject(new Error('Name needs to be a type of string'));
    })
 }
