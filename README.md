@@ -39,5 +39,21 @@ And that's how you create a new function that return the _Promise_.
 
 ### Uses of `then()` and `catch()`
 
-`then()` will get executed when the promise fulfilled, in the opposite `catch()` will get execute when the promise rejected.
+`then()` will get executed when the promise was fulfilled, in the opposite `catch()` will get execute when the promise was rejected.
 
+But this function will only run when the promise had a return. It's hard to explain, so maybe it will be better to look at the code below.
+
+```js
+function badFunction(){
+   return new Promise((fulfill, reject) => {
+      console.log('Hello');
+   })
+}
+
+badFunction()
+  .then(msg => console.log(meg))
+  .catch(err => console.log(err));
+```
+
+The code `then()` and `catch` won't be executed because there's nothing to return in its parameter.
+So you will only see the 'Hello' on the console.
