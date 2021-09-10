@@ -1,3 +1,5 @@
 # JS-Promise
 
-### this is the project of a promise in JavaScript
+### this is a project of the promise in JavaScript
+
+hello
