@@ -21,7 +21,7 @@ Now, the _Promise_ need two types of return.
 - fulfill
 - reject
 
-Therefore you need to include those two parameter in your _Promise_ function
+Therefore you need to include those two parameters in your _Promise_ function
 ```js
 new Promise((fulfill, reject) => {
   // code
