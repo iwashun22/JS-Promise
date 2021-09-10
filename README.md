@@ -90,7 +90,7 @@ sayHi('Michael')
    .catch(err => console.log(err));
 ```
 
-Now you can wrap them is one function to make it shorter
+Now you can wrap them in one function to make it shorter
 ```js
 function sayHi(name, delay){
    return new Promise((fulfill, reject) => {
