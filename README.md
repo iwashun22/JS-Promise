@@ -84,7 +84,7 @@ function sayHi(name){
    })
 }
 
-say('Michael')
+sayHi('Michael')
    .then(name => {return `Hello ${name}, Nice to meet you!`})
    .then(msg => console.log(msg))
    .catch(err => console.log(err));
